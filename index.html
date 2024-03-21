@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ca747af400.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header"><img src="./assets/logo.png" alt="logo" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web-Developer/Designer</p>
+                <h1>Hi, I'm <span>Anjali</span> <br>Tambade from India.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-----------About---------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/about.jpg" alt="girl">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am a passionate web developer with a sharp eye for detail and a talent for problem solving.
+                        I am passionate about creating memorable digital experiences.
+                        I like bringing creative ideas to life with clean, efficient code.
+                        Let's work together to turn your ideas become appealing online reality.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developement</span><br>Responcive Web Designing</li>
+                            <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                            <li><span>Front-End</span><br>Building Customer-friendly websites </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Developement Intern</span><br>PHN Technology Pvt. Ltd. Pune</li>
+                            <li><span>Front-End</span><br>Building Customer-friendly websites </li>
+                            <li><span>Current</span><br>Learning back-end web-developement </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016-2020: B.B.A.(Agriculture)</span><br>Shriram Collage of Agriculture Business
+                                Management.</li>
+                            <li><span>2015-2016: H.S.C.</span><br>Dr. B. J. Date Prashala.</li>
+                            <li><span>2013-2014: S.S.C.</span><br>Dr. B. J. date Prashala.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------services-------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web-Design</h2>
+                    <p>"Crafting captivating online experiences tailored to your brand's vision. Elevate your digital
+                        presence with our expert web design services."</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>"Crafting captivating interfaces that engage users and elevate brands. Let us bring your vision
+                        to life with seamless UI/UX design solutions."</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>Responcive Page</h2>
+                    <p>"Crafting fluid and dynamic designs to ensure your website looks stunning on any device. Let us
+                        elevate your online presence with our responsive design expertise."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------Portfolio----------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <div><img src="./assets/dice.png" alt="dice"></div>
+                    <div class="layer">
+                        <h3>Dice Game</h3>
+                        <p>"Experience the thrill of chance with our dynamic dice game crafted with HTML, CSS, and
+                            JavaScript for endless entertainment!"</p>
+                        <a href="https://anjalitambade.github.io/Dicee-challange/">Click here!</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <div><img src="./assets/drum.png" alt="drum"></div>
+                    <div class="layer">
+                        <h3>Drum Kit</h3>
+                        <p>"Experience the rhythm of your dreams with our diverse range of high-quality drum kits,
+                            perfect for drummers of all levels."</p>
+                        <a href="https://anjalitambade.github.io/Drum-Kit./">Click here!</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <div> <img src="./assets/wine.png" alt="wine"></div>
+                    <div class="layer">
+                        <h3>WineInfo</h3>
+                        <p>"Crafting a responsive website that adapts seamlessly across all devices to deliver optimal
+                            user experience and accessibility."</p>
+                        <a href="https://github.com/AnjaliTambade/WineInfo/settings/pages">Click here!</a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/AnjaliTambade?tab=repositories" class="button">See More</a>
+        </div>
+    </div>
+
+    <!---------Contact---------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><img src="./assets/email.png" alt="">anjalitambade232@gmail.com</p>
+                    <p><img src="./assets/phn.png" alt="">9284339515</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/anjali_tambade"><img src="./assets/twitter.png" alt="twitter"></a>
+                        <a href="https://www.linkedin.com/in/anjali-vikas-tambade-65aa96226/"><img
+                                src="./assets/linkedin.png" alt="linkedin"></a>
+                        <a href="https://github.com/AnjaliTambade?tab=repositories"><img src="./assets/github.png"
+                                alt="github"></a>
+                    </div>
+                    <a href="/assets/my cv.pdf" download="" class="button btn2">Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button btn2 btn3">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!---------footer------------>
+
+    <footer class="font-1 content">
+        <p>Copyright &copy; <span id="demo"></span> My Portfolio. All rights are reserved.</p>
+    </footer>
+
+    <!---------script---------->
+    <script src="index.js"></script>
+
+</body>
+
+</html>
